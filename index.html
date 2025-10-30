@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Balsamiq+Sans" rel="stylesheet">
+  <link rel="icon" type="image/png" href="./assets/snorlax.png" sizes="32x32">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button class="photo-gallery-button" value="button" onclick="document.getElementById('id01').style.display='block'; document.getElementById('id02').style.display='none'; document.getElementById('id03').style.display='none'; document.getElementById('photo-toggle').checked = false; document.getElementById('music-toggle').checked = false; document.getElementById('love-toggle').checked = false;">
+</button>
+
+<div id="id01" class="photo-gallery" style="display:none">
+  <span onclick="this.parentElement.style.display='none'" class="photo-gallery">
+    <div class="photo-closebtn">&times;</div>
+  </span>
+
+  <input type="checkbox" id="photo-toggle" class="photo-panel-toggle">
+  <label for="photo-toggle" class="photo-panel-header">
+    <span>Photo Collection</span>
+  </label>
+  <div class="photo-panel-content">
+      <div class="photo-scroll-container">
+      <div class="Image1">
+        <div class="container">
+          <p>I'm Thinking 🤔</p>
+         </div>
+      </div>
+      <div class="Image2">        
+        <div class="container">
+          <p>Ashim 😵</p>
+         </div>
+      </div>
+      <div class="Image3">
+        <div class="container">
+          <p>Hatdog 🌭</p>
+         </div>
+      </div>
+      <div class="Image4">
+        <div class="container">
+          <p>Hmmmm 🤨</p>
+         </div>
+      </div>
+      <div class="Image5">
+        <div class="container">     
+          <p>Eureka! 😲</p>
+         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button class="music-player-button" value="button" onclick="document.getElementById('id02').style.display='block'; document.getElementById('id01').style.display='none'; document.getElementById('id03').style.display='none'; document.getElementById('photo-toggle').checked = false; document.getElementById('music-toggle').checked = false; document.getElementById('love-toggle').checked = false;">
+</button>
+
+
+<div id="id02" class="music-player" style="display:none">
+  <span onclick="this.parentElement.style.display='none'" class="music-player">
+    <div class="music-closebtn">&times;</div>
+  </span>
+
+  <input type="checkbox" id="music-toggle" class="music-panel-toggle">
+  <label for="music-toggle" class="music-panel-header">
+    <span>Music Player</span>
+  </label>
+  <div class="music-panel-content">
+  <audio class="music" src="assets/audio.mp3" preload="metadata"></audio>
+  <div class="custom-player">
+      <div class="song-info">
+        <h3 id="song-title">We fell in love in october</h3>
+      </div>
+      <div class="progress-container">
+        <span id="current-time">0:00</span>
+        <input type="range" id="progress-bar" value="0" max="100" step="0.1">
+        <span id="duration">0:00</span>
+      </div>
+      <div class="controls">
+        <button id="play-pause-btn"><img src="assets/image-content/play.png" alt="Play" style="width: 20px; height: 20px;"></button>
+        <div class="volume-container">
+          <img src="assets/image-content/volume.png" alt="Volume" style="width: 20px; height: 20px;">
+          <input type="range" id="volume-slider" min="0" max="1" step="0.1" value="0.5">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<button class="love-letter-button" value="button" onclick="document.getElementById('id03').style.display='block'; document.getElementById('id01').style.display='none'; document.getElementById('id02').style.display='none'; document.getElementById('photo-toggle').checked = false; document.getElementById('music-toggle').checked = false; document.getElementById('love-toggle').checked = false;">
+</button>
+
+<div id="id03" class="love-letter" style="display:none">
+  <span onclick="this.parentElement.style.display='none'" class="love-letter">
+    <div class="love-closebtn">&times;</div>
+  </span>
+
+  <input type="checkbox" id="love-toggle" class="love-panel-toggle">
+  <label for="love-toggle" class="love-panel-header">
+    <span>Love Letter</span>
+  </label>
+  <div class="love-panel-content">
+    <div class="love-letter-text">
+      <p>Dear Emmi,</p>
+      <p>Happy Monthsary! I know we’ve had our challenges and that I didn’t make the best first impression during our first month. But as we begin our second month together, I want to show you that I can grow and become a better person. You might still wonder what I like about you—basically everything. I don’t mind your flaws or imperfections because I accept you completely for who you are.</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;Highlighted in 1 Corinthians 13:4-7, "Love does not rejoice at wrongdoing but rejoices with the truth, and it always protects, trusts, hopes, and perseveres." I've never stopped cherishing any of the memories we make every day, even though it's through a screen. Even though I have doubts about your trust, I realize that it's just me overthinking things. I'm sorry if my expressing a lack of trust comes off as being too clingy or if it suggests that I'm thinking the worst of the situation. That's just my nature as an individual, but I still give you the freedom to do what you want to do and don't want to limit you for my need.</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;From the words of Olaf from Frozen, “Love is putting someone else’s needs before yours.” I will always love every factor of you and will tend to your needs. Feel free to be open with me. Don’t hesitate to share or ask anything that would help you feel assured and happy, Thank you for staying with me through my ups and downs, for making me feel seen and appreciated, and for being the person who makes my days brighter. Here’s to more months of laughter, growth, and memories together.</p>
+      <p>With all my love,<br>Russ</p>
+    </div>
+  </div>
+</div>
+
+  <div class="bg-img">
+    <div class="blur"></div>
+  </div>
+  <div class="snorlax"></div>
+  <div class="lechonk"></div>
+  <div class="content">
+    <h1 class="heading">Happy Monthsary! <3</h1>
+  </div>
+    <div id="counter" class="counter">How long we've been together:<br><span id="time-together">Calculating...</span></div>
+  <script src="index.js"></script>
+</body>
+</html>
